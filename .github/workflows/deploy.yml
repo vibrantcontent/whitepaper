@@ -21,10 +21,10 @@ jobs:
       - name: Install dependencies
         run: cd docs && yarn install
       - name: Build
-        run: cd docs && yarn localbuild
+        run: cd docs && yarn build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GH_TOKEN }}
-          publish_dir: ardrive-docs
+          publish_dir: docs/src/.vuepress/dist
           publish_branch: gh-pages

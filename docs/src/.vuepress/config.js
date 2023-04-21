@@ -1,6 +1,5 @@
 const { description } = require("../../package");
 const default_sidebar_config = require("./theme/configs/default_sidebar_config");
-const CLI_sidebar_config = require("./theme/configs/CLI_sidebar_config");
 const nav_config = require('./theme/configs/Nav_Config')
 
 
@@ -8,9 +7,9 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: "ardrive.io",
-  base: '/ardrive-docs/',
-  dest:'../ardrive-docs/',
+  title: "ar.io Whitepaper",
+  base: '/whitepaper/',
+
 
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
@@ -42,10 +41,9 @@ module.exports = {
     docsDir: "",
     editLinkText: "",
     lastUpdated: true,
-    logo: "/images/ArDrive-Logo.png",
+    logo: "/images/elephant-light.png",
     nav: nav_config,
     sidebar: {
-      "/docs/cli/": CLI_sidebar_config,
       "/": default_sidebar_config,
     },
   },
